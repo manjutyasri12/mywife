@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Quicksand', 'Montserrat', Arial, sans-serif;
-  background: linear-gradient(120deg, #ffdde1 0%, #f7bb97 100%), radial-gradient(circle at 80% 20%, #ffe6fa 0%, #fff6f0 100%);
-  color: #b3003a;
+  background: linear-gradient(120deg, #ffdde1 0%, #a1c4fd 40%, #c2e9fb 70%, #fbc2eb 100%), radial-gradient(circle at 80% 20%, #ffe6fa 0%, #fff6f0 100%);
+  color: #6a0572;
   min-height: 100vh;
   overflow-x: hidden;
   background-blend-mode: lighten;
@@ -21,20 +21,21 @@ main {
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem 5rem 1rem;
-  background: rgba(255,255,255,0.7);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(255,0,64,0.08);
+  background: linear-gradient(120deg, #fffbe6 0%, #e0c3fc 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgba(161,196,253,0.13);
 }
 
 /* Rainbow animated text for heading */
+/* Rainbow animated text for heading with more colors */
 .rainbow-text {
   font-family: 'Pacifico', 'Great Vibes', cursive;
   font-size: 2.7rem;
-  background: linear-gradient(90deg, #ff6a88, #ffb86c, #f7bb97, #ffdde1, #e6005c, #ffb6b9, #fff6f0);
-  background-size: 400% 400%;
+  background: linear-gradient(90deg, #ff6a88, #ffb86c, #f7bb97, #a1c4fd, #43e97b, #38f9d7, #fbc2eb, #e0c3fc, #fff6f0, #f7971e, #ffd200, #e6005c);
+  background-size: 800% 800%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: rainbow 6s ease-in-out infinite;
+  animation: rainbow 8s ease-in-out infinite;
   text-align: center;
   display: inline-block;
 }
@@ -45,7 +46,7 @@ main {
 .hero h1 {
   font-family: 'Pacifico', 'Great Vibes', cursive;
   font-size: 2.7rem;
-  color: #e6005c;
+  color: #7f53ac;
   text-align: center;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
@@ -53,21 +54,22 @@ main {
 .subtitle {
   font-family: 'Sacramento', cursive;
   font-size: 1.5rem;
-  color: #b3003a;
+  color: #43e97b;
   display: block;
   margin-top: 0.5rem;
   text-align: center;
+  text-shadow: 0 2px 8px #e0c3fc;
 }
 .welcome {
   text-align: center;
   font-size: 1.25rem;
   margin-bottom: 2rem;
   font-family: 'Quicksand', 'Montserrat', sans-serif;
-  color: #d72660;
-  background: rgba(255,255,255,0.7);
+  color: #7f53ac;
+  background: linear-gradient(90deg, #fbc2eb 0%, #a1c4fd 100%);
   border-radius: 16px;
   padding: 0.7rem 1.2rem;
-  box-shadow: 0 2px 12px rgba(255,0,64,0.06);
+  box-shadow: 0 2px 12px rgba(67,233,123,0.10);
 }
 
 section {
@@ -76,20 +78,20 @@ section {
 
 h2 {
   font-family: 'Pacifico', 'Great Vibes', cursive;
-  color: #e6005c;
+  color: #f7971e;
   font-size: 2.1rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px #fff6f0;
+  text-shadow: 0 2px 8px #a1c4fd;
 }
 
 .story p, .future-dreams p {
   font-size: 1.1rem;
-  color: #b3003a;
-  background: #fff0f6;
-  border-radius: 12px;
+  color: #6a0572;
+  background: linear-gradient(90deg, #c2e9fb 0%, #fbc2eb 100%);
+  border-radius: 14px;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(255,0,64,0.04);
+  box-shadow: 0 2px 8px rgba(161,196,253,0.08);
 }
 
 .slideshow-container {
@@ -97,8 +99,8 @@ h2 {
   max-width: 350px;
   margin: 0 auto 1.5rem auto;
   border-radius: 20px;
-  box-shadow: 0 4px 24px 0 #ffb6b9;
-  background: linear-gradient(135deg, #fff6f0 0%, #ffd6e0 100%);
+  box-shadow: 0 4px 24px 0 #a1c4fd;
+  background: linear-gradient(135deg, #fbc2eb 0%, #a1c4fd 100%);
   overflow: hidden;
 }
 .slide {
@@ -112,16 +114,16 @@ h2 {
 .photo-placeholder {
   width: 100%;
   height: 220px;
-  background: linear-gradient(135deg, #ffd6e0 0%, #fff6f0 100%);
-  border: 2px dashed #e6005c;
+  background: linear-gradient(135deg, #a1c4fd 0%, #fbc2eb 100%);
+  border: 2px dashed #f7971e;
   border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e6005c;
+  color: #7f53ac;
   font-size: 1.2rem;
   font-family: 'Quicksand', 'Montserrat', sans-serif;
-  box-shadow: 0 2px 8px rgba(255,0,64,0.04);
+  box-shadow: 0 2px 8px rgba(67,233,123,0.08);
   letter-spacing: 1px;
 }
 .prev, .next {
@@ -172,20 +174,20 @@ h2 {
   padding: 0;
 }
 .why-love li {
-  background: linear-gradient(90deg, #fff0f6 60%, #ffe6eb 100%);
+  background: linear-gradient(90deg, #fbc2eb 60%, #a1c4fd 100%);
   margin: 0.5rem 0;
   padding: 0.9rem 1.2rem;
   border-radius: 16px;
   font-size: 1.18rem;
-  color: #b3003a;
-  box-shadow: 0 2px 8px rgba(255,0,64,0.04);
+  color: #7f53ac;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.08);
   position: relative;
   font-family: 'Quicksand', 'Montserrat', sans-serif;
   letter-spacing: 0.5px;
 }
 .why-love li::before {
-  content: '🌹';
-  color: #e6005c;
+  content: '🌸';
+  color: #f7971e;
   margin-right: 0.7rem;
   font-size: 1.2rem;
 }
@@ -195,17 +197,17 @@ h2 {
   justify-content: center;
 }
   .proposal-box {
-    background: linear-gradient(135deg, #fff0f6 0%, #ffe6eb 100%);
-    border: 2px solid #e6005c;
+    background: linear-gradient(135deg, #a1c4fd 0%, #fbc2eb 100%);
+    border: 2px solid #f7971e;
     border-radius: 28px;
     padding: 2.2rem 1.7rem;
-    box-shadow: 0 4px 32px rgba(255,0,64,0.13);
+    box-shadow: 0 4px 32px rgba(161,196,253,0.13);
     text-align: center;
     position: relative;
     animation: pulse 2s infinite;
     font-family: 'Pacifico', 'Great Vibes', cursive;
     font-size: 1.25rem;
-    color: #d72660;
+    color: #7f53ac;
     letter-spacing: 1px;
   }
 @keyframes pulse {
@@ -219,7 +221,7 @@ h2 {
 .proposal-buttons button {
   font-family: 'Great Vibes', cursive;
   font-size: 1.3rem;
-  background: #e6005c;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
   color: #fff;
   border: none;
   border-radius: 16px;
@@ -227,10 +229,11 @@ h2 {
   margin: 0 0.5rem;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(255,0,64,0.08);
+  box-shadow: 0 2px 8px rgba(67,233,123,0.13);
 }
 .proposal-buttons button:hover {
-  background: #b3003a;
+  background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+  color: #fff;
   transform: scale(1.07);
 }
 
@@ -238,30 +241,31 @@ footer {
   text-align: center;
   font-family: 'Sacramento', 'Great Vibes', cursive;
   font-size: 1.3rem;
-  color: #e6005c;
+  color: #43e97b;
   margin-top: 2rem;
   background: transparent;
   letter-spacing: 1px;
+  text-shadow: 0 2px 8px #a1c4fd;
 }
 
 #music-toggle {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background: #fff0f6;
-  color: #e6005c;
-  border: 2px solid #e6005c;
+  background: linear-gradient(90deg, #a1c4fd 0%, #43e97b 100%);
+  color: #fff;
+  border: 2px solid #43e97b;
   border-radius: 50px;
   padding: 0.7rem 1.5rem;
   font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(255,0,64,0.08);
+  box-shadow: 0 2px 8px rgba(67,233,123,0.13);
   transition: background 0.2s, color 0.2s;
 }
 #music-toggle:hover {
-  background: #e6005c;
+  background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
   color: #fff;
 }
 
