@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congratulations!</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fffbe6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Pacifico', 'Great Vibes', cursive;
+      color: #b3003a;
+      margin: 0;
+    }
+    .congrats-box {
+      background: #fff;
+      border: 3px solid #e6b400;
+      border-radius: 32px;
+      box-shadow: 0 8px 32px rgba(127,83,172,0.10);
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      max-width: 400px;
+    }
+    .congrats-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+      color: #e6b400;
+    }
+    .congrats-box p {
+      font-size: 1.3rem;
+      color: #b3003a;
+      margin-bottom: 1.5rem;
+    }
+    .rose {
+      width: 80px;
+      margin: 1.5rem auto 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="congrats-box">
+    <h1>Congratulations! 🌹</h1>
+    <p>Your love story just got a new chapter.<br>May your journey together be filled with endless joy, laughter, and love!</p>
+    <img class="rose" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Red_rose.png" alt="Rose" />
+    <p style="font-size:1.1rem; color:#e6b400; margin-top:2rem;">Redirecting you back in a moment...</p>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, 5000);
+  </script>
+</body>
+</html>

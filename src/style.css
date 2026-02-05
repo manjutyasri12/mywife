@@ -1,3 +1,27 @@
+main.burnt-letter {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem 5rem 1rem;
+  background: #fffbe6;
+  border-radius: 32px 32px 80px 32px/32px 32px 120px 32px;
+  box-shadow: 0 0 60px 10px #b08968, 0 8px 32px rgba(127,83,172,0.08);
+  border: 3px solid #b08968;
+  border-bottom: 12px solid #b08968;
+  filter: drop-shadow(0 0 30px #b08968);
+  overflow: hidden;
+}
+.rose-deco {
+  width: 60px;
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  filter: drop-shadow(0 2px 8px #b08968);
+}
+.heart {
+  color: #e6005c !important;
+  filter: drop-shadow(0 0 2px #fffbe6);
+}
 body {
   margin: 0;
   font-family: 'Quicksand', 'Montserrat', Arial, sans-serif;
