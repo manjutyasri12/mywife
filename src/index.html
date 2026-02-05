@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>To My Dearest Wife Kavana ❤️</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&family=Pacifico&family=Sacramento&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="hearts-bg"></div>
   <main>
     <section class="hero">
-      <h1>To My Dearest wife Kavana ❤️<br><span class="subtitle">can I call you kavana manjunath</span></h1>
+      <h1><span class="rainbow-text">To My Dearest wife Kavana ❤️</span><br><span class="subtitle">can I call you kavana manjunath</span></h1>
       <p class="welcome">From the moment you came into my life, everything became more beautiful. This little website is a small surprise to show how special you are to me.</p>
     </section>
     <section class="story">
@@ -20,12 +20,31 @@
     </section>
     <section class="gallery">
       <h2>Photo Gallery</h2>
-      <div class="photos">
-        <div class="photo-placeholder">Photo Memory 1</div>
-        <div class="photo-placeholder">Photo Memory 2</div>
-        <div class="photo-placeholder">Photo Memory 3</div>
-        <div class="photo-placeholder">Photo Memory 4</div>
-        <div class="photo-placeholder">Photo Memory 5</div>
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <div class="photo-placeholder">Photo Memory 1</div>
+        </div>
+        <div class="slide fade">
+          <div class="photo-placeholder">Photo Memory 2</div>
+        </div>
+        <div class="slide fade">
+          <div class="photo-placeholder">Photo Memory 3</div>
+        </div>
+        <div class="slide fade">
+          <div class="photo-placeholder">Photo Memory 4</div>
+        </div>
+        <div class="slide fade">
+          <div class="photo-placeholder">Photo Memory 5</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
     </section>
     <section class="why-love">
@@ -58,5 +77,28 @@
   <audio id="bg-music" src="music.mp3" loop></audio>
   <button id="music-toggle">Play Music 🎵</button>
   <script src="script.js"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    // Auto slideshow
+    setInterval(() => { plusSlides(1); }, 3500);
+  </script>
 </body>
 </html>
