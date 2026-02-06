@@ -25,20 +25,7 @@ function burstHearts() {
 }
 document.querySelector('.proposal-buttons').addEventListener('click', burstHearts);
 
-// Music toggle
-const music = document.getElementById('bg-music');
-const musicBtn = document.getElementById('music-toggle');
-let playing = false;
-musicBtn.addEventListener('click', () => {
-  if (!playing) {
-    music.play();
-    musicBtn.textContent = 'Pause Music ❚❚';
-  } else {
-    music.pause();
-    musicBtn.textContent = 'Play Music 🎵';
-  }
-  playing = !playing;
-});
+
 
 // Add floating heart and burst heart styles
 document.head.insertAdjacentHTML('beforeend', `<style>
