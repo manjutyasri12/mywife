@@ -1,5 +1,6 @@
-# TODO: Make Folder Error-Free
+# TODO: Make Folder Good for GitHub Pages
 
-- [x] Fix image paths in index.html (remove "../" prefix)
-- [x] Remove audio and music toggle button from index.html
-- [x] Remove music toggle code from script.js
+- [x] Update image paths in index.html to use assets/images/
+- [ ] Move image files to assets/images/ directory
+- [ ] Commit and push the changes to GitHub
+- [ ] Enable GitHub Pages in the repository settings
